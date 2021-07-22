@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DxAdmin-cli Docs</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#приветствую-в-документации-по-dxadmin-cli">Приветствую в документации по dxAdmin-cli</a>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="#синтаксис---проще-некуда-">Синтаксис - проще некуда !</a>
+<ul>
+<li><a href="#все-команды-на-момент-написания.">Все команды на момент написания.</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="приветствую-в-документации-по-dxadmin-cli">Приветствую в документации по dxAdmin-cli</h1>
+<h3 id="здесь-будут-основная-информация-о-моём-плагином-для-сервера-starforce">Здесь будут основная информация о моём плагином для сервера StarForce</h3>
+<h1 id="синтаксис---проще-некуда-">Синтаксис - проще некуда !</h1>
+<p>На данный момент, в плагине есть несколько основных команды. Давайте посмотрим на их функционал, и синтаксис.</p>
+<h2 id="все-команды-на-момент-написания.">Все команды на момент написания.</h2>
+<h3 id="описание-всех-комманд">Описание всех комманд</h3>
+<ul>
+<li><code>plyData</code> - команда для получения информации о игроке или игроках</li>
+<li><code>giveUniform</code> - команда для выдачи звание, формы, оружия, игрокам</li>
+<li><code>changename</code> - команда для изменения имение на сервере</li>
+<li><code>gotUniform</code> - команда для получения новой формы с оружием</li>
+</ul>
+<h3 id="посмотрим-на-таблицу-всех-команд-а-потом-перейдём-к-примерам.">Посмотрим на таблицу всех команд а потом перейдём к примерам.</h3>
+
+<table>
+<thead>
+<tr>
+<th>Назвние команды</th>
+<th>Первый флаг</th>
+<th>Второй флаг</th>
+<th>Третий флаг</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>plyData</code></td>
+<td>Номер игрока</td>
+<td><code>-a</code> или  <code>--all</code>, все игроки</td>
+<td></td>
+</tr>
+<tr>
+<td><code>giveUniform</code></td>
+<td>Легион</td>
+<td>Звание</td>
+<td>Номер игрока</td>
+</tr>
+<tr>
+<td><code>changename</code></td>
+<td>Новое имя</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>gotUniform</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><h3 id="примеры">Примеры</h3>
+<ol>
+<li>Например я хочу получить информацию о всех игроках что бы выдать кому-то форму. (ВНИМАНИЕ: все команды нужно вводить в консоль)</li>
+</ol>
+<h4 id="input">Input</h4>
+<pre class=" language-bash"><code class="prism  language-bash">plyData - --all
+</code></pre>
+<h4 id="output">Output</h4>
+<pre class=" language-bash"><code class="prism  language-bash">ID <span class="token operator">|</span> NICKNAME <span class="token operator">|</span> LEGION <span class="token operator">|</span> RANK
+ 1  <span class="token operator">|</span> JavaScript <span class="token operator">|</span> PL <span class="token operator">|</span> PL-rr
+ 2  <span class="token operator">|</span> Zallex <span class="token operator">|</span> advistor <span class="token operator">|</span> -
+ 3  <span class="token operator">|</span> ПростоКостя <span class="token operator">|</span> PL <span class="token operator">|</span> PL-cm
+ 4  <span class="token operator">|</span> Chelovek228WorldOfTanksProAUEMLG <span class="token operator">|</span> SC <span class="token operator">|</span> SC-cm
+ 5  <span class="token operator">|</span> ₣ê₦Íχ <span class="token operator">|</span> SC <span class="token operator">|</span> SC-cm
+ 6  <span class="token operator">|</span> Onex <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 7  <span class="token operator">|</span> BuReSY <span class="token operator">|</span> PL <span class="token operator">|</span> PL-ms
+ 8  <span class="token operator">|</span> MD <span class="token operator">|</span> PL <span class="token operator">|</span> PL-cr
+ 9  <span class="token operator">|</span> Lucifer <span class="token operator">|</span> advistor <span class="token operator">|</span> -
+ 10  <span class="token operator">|</span> Mogan <span class="token operator">|</span> SC <span class="token operator">|</span> SC-rr
+ 11  <span class="token operator">|</span> waRn1ng <span class="token operator">|</span> SC <span class="token operator">|</span> SC-capitan
+ 12  <span class="token operator">|</span> Zarpi <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 13  <span class="token operator">|</span> Refuko <span class="token operator">|</span> grievous <span class="token operator">|</span> -
+ 14  <span class="token operator">|</span> NoisyBoy <span class="token operator">|</span> PL <span class="token operator">|</span> PL-rr
+ 15  <span class="token operator">|</span> -_- <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 16  <span class="token operator">|</span> OlegSpartak <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 17  <span class="token operator">|</span> alex. <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 18  <span class="token operator">|</span> unnamed <span class="token operator">|</span> PL <span class="token operator">|</span> PL-ksm
+ 19  <span class="token operator">|</span> kaka1n41k 228 <span class="token operator">|</span> PL <span class="token operator">|</span> PL-rr
+ 20  <span class="token operator">|</span> Mambetik <span class="token operator">|</span> PL <span class="token operator">|</span> PL-cm
+ 21  <span class="token operator">|</span> Khada Jhin <span class="token operator">|</span> advistor <span class="token operator">|</span> -
+ 22  <span class="token operator">|</span> Sacred Devil <span class="token operator">|</span> SC <span class="token operator">|</span> SC-l
+ 23  <span class="token operator">|</span> Островский <span class="token operator">|</span> SC <span class="token operator">|</span> SC-rr
+ 24  <span class="token operator">|</span> Scream♡ <span class="token operator">|</span> SC <span class="token operator">|</span> SC-rr
+ 25  <span class="token operator">|</span> ♔Lucky♔ <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 26  <span class="token operator">|</span> PersonTwo <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+ 27  <span class="token operator">|</span> Bot01 <span class="token operator">|</span>  <span class="token operator">|</span> cadet
+</code></pre>
+<p>Вот мы получили таблицу всех игроков, которые существуют на сервере. В примере можно увидеть что перед флагом <code>--all</code> у нас стоит <code>-</code>, что это означает ?</p>
+<p><strong>Ответ</strong>: Это означает что мы не используем первый флаг, и что бы его пропустить мы поставили заглушку <code>-</code>.</p>
+<ol start="2">
+<li>Теперь когда у меня есть информация о нужных мне игроках, я хочу выдать кадету под номером <strong>26</strong>, форму <strong>Солдата Клона</strong> и Звание <strong>Рядового</strong>.</li>
+</ol>
+<h4 id="input-1">Input</h4>
+<pre class=" language-bash"><code class="prism  language-bash">giveUniform SC SC-r 26
+</code></pre>
+<h4 id="output-1">Output</h4>
+<pre class=" language-bash"><code class="prism  language-bash">Ты выдал форму из SC c рангом SC-r Игроку <span class="token operator">=</span> PersonTwo
+</code></pre>
+<ol start="3">
+<li>После того как я выдал ему форму игроку, он должен ввести команду <code>gotUniform</code> что бы одеть её.</li>
+</ol>
+<h3 id="p.s">P.S</h3>
+<p>Думаю я объяснил основные понятие работы с моим плагином, если есть вопросы пишите мне на почту.</p>
+<p>mail: <strong><a href="mailto:dxv1d@tuta.io">dxv1d@tuta.io</a></strong><br>
+website: <strong><a href="http://webgtx.github.io">webgtx.github.io</a></strong></p>
+
+    </div>
+  </div>
+</body>
+
+</html>
